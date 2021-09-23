@@ -19,7 +19,6 @@ export default function ApplicantEffectiveDateForm() {
     const [appliantEffectiveDate, setApplicantEffectiveDate] = useState('')
     const dispatch = useDispatch()
     const history = useHistory()
-    
 
     // FUNCTION TO SAVE THE APPLICANT EFFECTIVE DATE
     const saveApplicantEffectiveDate = async (e) => {
