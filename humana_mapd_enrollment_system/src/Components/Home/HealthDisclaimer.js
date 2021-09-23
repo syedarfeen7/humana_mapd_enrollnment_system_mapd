@@ -35,8 +35,11 @@ export default function HealthDisclaimer() {
                     </div>
                     <div className="health-disclaimer-details-wrapper white-bg-color">
                         <p className="collapsed-text main-section-font-color health-disclaimer-details-p">
-                            <strong>Plans are insured through UnitedHealthcare Insurance Company </strong>
-                            or one of its affiliated companies, a Medicare Advantage organization with a Medicare contract and a Medicare-approved Part D sponsor. Enrollment in these plans depends on the plan’s contract renewal with Medicare. You do not need to be an AARP member to enroll in a Medicare Advantage plan or Medicare Prescription Drug plan. UnitedHealthcare Insurance Company pays royalty fees to AARP for the use of its intellectual property. These fees are used for the general purposes of AARP. AARP and its affiliates are not insurers. AARP does not employ or...<span className="read-more font-sky" onClick={expandedText}>Read more</span>
+                            Humana - Humana is a Medicare Advantage (HMO, HMO SNP,  PPO, PPO SNP and PFFS) organization and a stand-alone PDP prescription drug plan with a
+Medicare contract. Enrollment in any Humana plan depends on contract renewal.
+<br/>
+Humana - Humana is a Coordinated Care plan with a Medicare contract and a contract with the state Medicaid program.
+Enrollment in this Humana plan depends on contract renewal. or...<span className="read-more font-sky" onClick={expandedText}>Read more</span>
                         </p>
                         {expandedDiv}
                     </div>
