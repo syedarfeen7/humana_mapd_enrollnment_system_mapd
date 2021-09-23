@@ -66,6 +66,7 @@ export const eligibilityQuestionsScheema = yup.object().shape({
   coverageName: yup.string(),
   coverageID: yup.string(),
   coverageGroup: yup.string(),
+  medicalHealthCoverage: yup.string(),
   primaryCarePhysicianFullName: yup.string(),
   primaryCarePhysicianIDNumber: yup.string(),
   providerID: yup.string(),

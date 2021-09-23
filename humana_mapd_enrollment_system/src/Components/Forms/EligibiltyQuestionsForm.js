@@ -135,6 +135,7 @@ export default function EligibilityQuestionsForm() {
         setPerciptionDrugCoverage(editableEligibilityQuestions.eq.perciptionDrugCoverage)
         setCoverageName(editableEligibilityQuestions.eq.coverageName)
         setCoverageID(editableEligibilityQuestions.eq.coverageID)
+        setCoverageGroup(editableEligibilityQuestions.eq.coverageGroup)
         setSpouseWork(editableEligibilityQuestions.eq.spouseWork)
         setPrimaryCArePhysicianFullName(editableEligibilityQuestions.eq.primaryCarePhysicianFullName)
         setPrimaryCarePhysicianIDNumber(editableEligibilityQuestions.eq.primaryCarePhysicianIDNumber)
@@ -189,7 +190,7 @@ export default function EligibilityQuestionsForm() {
         e.preventDefault();
 
         // const medicarePartBEffectiveDate = medicarePartBEffectiveDate.getDate() + "-" + medicarePartBEffectiveDate.getMonth() + "-" + medicarePartBEffectiveDate.getFullYear()
-        let data = { medicareEnrollmentPeriod, medicarePartBEffectiveDate, dateOfYouEstablishedResidencyOne, endDateOfPreviousCoverageOne, dateOfYouEstablishedResidencyTwo, endDateOfPreviousCoverageTwo, medicareStartDate, dateReleasedFromIncarceration, endDateOfPreviousCoverageThree, endDateOfPreviousCoverageFour, endDateOfPreviousCoverageFive, DateOfCoverageYouAreLeaving, dateOfYouEstablishedResidencyThree, spouseWork, perciptionDrugCoverage, coverageName, coverageID, coverageGroup, primaryCarePhysicianFullName, primaryCarePhysicianIDNumber, currentPatient }
+        let data = { medicareEnrollmentPeriod, medicarePartBEffectiveDate, dateOfYouEstablishedResidencyOne, endDateOfPreviousCoverageOne, dateOfYouEstablishedResidencyTwo, endDateOfPreviousCoverageTwo, medicareStartDate, dateReleasedFromIncarceration, endDateOfPreviousCoverageThree, endDateOfPreviousCoverageFour, endDateOfPreviousCoverageFive, DateOfCoverageYouAreLeaving, dateOfYouEstablishedResidencyThree, spouseWork, perciptionDrugCoverage, coverageName, coverageID, coverageGroup, medicalHealthCoverage, primaryCarePhysicianFullName, primaryCarePhysicianIDNumber, currentPatient }
 
         // HERE WE ARE VALIDATING THE ELIGIBILITY QUESTION
         await eligibilityQuestionsScheema.strict().validate(data).then(res => {
